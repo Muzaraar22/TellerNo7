@@ -1,0 +1,45 @@
+{
+    "name": "ActionInput",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "4db312b9-1b39-45b4-99ba-24dba0ac720d",
+            "actions": [
+                {
+                    "name": "NextStory",
+                    "type": "Button",
+                    "id": "004acec8-79f3-4d17-9cbb-4d4917bd7a9d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e251ff9e-4319-4218-abcc-260d723be59d",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextStory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36ea8e94-657f-4688-a2e9-ecb55b998a57",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextStory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
