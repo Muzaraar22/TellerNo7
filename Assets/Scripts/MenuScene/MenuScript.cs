@@ -45,7 +45,7 @@ public class MenuScript : MonoBehaviour
         {
             if (!is_typing)
             {
-                if (current_index < dialogs.Length)
+                if (current_index < dialogs.Length-1)
                 {
                     current_index++;
                     StartTyping(dialogs[current_index]);
@@ -53,7 +53,7 @@ public class MenuScript : MonoBehaviour
                 else
                 {
                     introPanelCanvas.SetActive(false);
-                    // SceneManager.LoadScene("GameScene");
+                    SceneManager.LoadScene("MainGame");
                 }
             }
             else

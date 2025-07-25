@@ -54,7 +54,12 @@ public class SettingsScript : MonoBehaviour
     public void LoadSettings()
     {
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+        audioMixer.SetFloat("MusicVolume", Mathf.Log10(musicSlider.value) * 20);
+
         sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
+        audioMixer.SetFloat("SFXVolume", Mathf.Log10(sfxSlider.value) * 20);
+
         BrightnessSlider.value = PlayerPrefs.GetFloat("Brightness");
+        BrightnessPanel.color = new Color(BrightnessPanel.color.r, BrightnessPanel.color.g, BrightnessPanel.color.b, 1 - BrightnessSlider.value);
     }
 }

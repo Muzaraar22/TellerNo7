@@ -135,6 +135,6 @@ public class IntroManager : MonoBehaviour
         anim.SetTrigger("Fade");
 
         yield return new WaitForSeconds(2f); // durasi fade
-        // SceneManager.LoadScene("Game"); // pastikan sudah ditambahkan ke Build Settings
+        SceneManager.LoadScene("MainGame"); // pastikan sudah ditambahkan ke Build Settings
     }
 }
